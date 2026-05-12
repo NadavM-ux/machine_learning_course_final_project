@@ -1,0 +1,26 @@
+Metric,Value
+Total unique users,945
+,
+statuses_count — min,0
+statuses_count — max,9934
+statuses_count — mean,1550.97
+statuses_count — median,544.00
+statuses_count — std,2174.20
+,
+followers_count — min,0
+followers_count — max,9733
+followers_count — mean,972.98
+followers_count — median,68.00
+followers_count — std,1935.07
+,
+following_count — min,0
+following_count — max,8866
+following_count — mean,878.32
+following_count — median,289.00
+following_count — std,1410.59
+,
+created_at — earliest year,2007
+created_at — latest year,2025
+created_at — mean year,2018.57
+created_at — median year,2020
+created_at — std (years),5.52
