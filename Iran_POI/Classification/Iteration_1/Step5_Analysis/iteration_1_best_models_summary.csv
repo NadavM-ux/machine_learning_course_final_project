@@ -1,0 +1,7 @@
+task,n_classes,naive_algo,naive_feature_set,naive_F1,naive_AUC,honest_algo,honest_feature_set,honest_training_type,honest_balanced,honest_accuracy,honest_precision,honest_recall,honest_F1,honest_AUC
+target_population,3,LogReg,numeric,0.665,0.747,LogReg,numeric,K-Fold,False,0.67,0.668,0.67,0.665,0.747
+target_population,2,LogReg,desc+numeric,0.89,0.875,LogReg,desc+numeric,LOOCV,True,0.889,0.892,0.889,0.89,0.875
+locals_vs_diaspora,3,AdaBoost,desc+numeric,0.936,0.539,AdaBoost,desc+numeric,LOOCV,False,0.95,0.933,0.95,0.936,0.61
+locals_vs_diaspora,2,LogReg,desc_user,0.75,0.5,LogReg,desc,LOOCV,True,0.75,0.75,0.75,0.75,0.5
+person_vs_organization,3,AdaBoost,desc_fullname,0.704,0.619,AdaBoost,desc_fullname,LOOCV,True,0.74,0.685,0.74,0.704,0.619
+person_vs_organization,2,SVM,desc+numeric,0.781,0.84,SVM,desc+numeric,LOOCV,True,0.776,0.788,0.776,0.781,0.84

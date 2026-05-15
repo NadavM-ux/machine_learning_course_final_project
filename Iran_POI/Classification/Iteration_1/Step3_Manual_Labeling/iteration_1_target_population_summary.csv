@@ -1,0 +1,4 @@
+class,count,percentage
+target,13,13%
+non_target,50,50%
+unknown,37,37%

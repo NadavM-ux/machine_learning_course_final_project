@@ -1,0 +1,4 @@
+label_type,n_items,percent_agreement,cohens_kappa
+target_population,100,0.93,0.8803
+locals_vs_diaspora,100,1.0,1.0
+person_vs_organization,100,0.96,0.9353
