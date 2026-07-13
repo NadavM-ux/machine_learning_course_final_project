@@ -1,0 +1,3 @@
+iteration,n_labeled_users,n_experiments,mean_accuracy,mean_F1,mean_AUC,best_AUC_target_population,best_AUC_locals_vs_diaspora,best_AUC_person_vs_organization
+1,100,648,0.6289,0.5884,0.4847,0.8954,0.8152,0.8032
+2,200,648,0.636,0.6079,0.5095,0.788,0.7731,0.7509

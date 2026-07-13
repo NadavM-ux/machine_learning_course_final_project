@@ -1,0 +1,4 @@
+task,algorithm,feature_set,training_type,balanced,accuracy,F1,AUC,note
+target_population,LogReg,numeric,K-Fold,False,0.67,0.6646,0.7472,Honest winner (AUC > 0.6)
+locals_vs_diaspora,AdaBoost,desc+numeric,LOOCV,False,0.95,0.9357,0.6104,Honest winner (AUC > 0.6)
+person_vs_organization,AdaBoost,desc_fullname,LOOCV,True,0.74,0.7037,0.6194,Honest winner (AUC > 0.6)

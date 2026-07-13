@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# OS + local safety backups
+.DS_Store
+**/.DS_Store
+_backup_pre_locals_removal/
