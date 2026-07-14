@@ -221,3 +221,4 @@ __marimo__/
 .DS_Store
 **/.DS_Store
 _backup_pre_locals_removal/
+*.bak
