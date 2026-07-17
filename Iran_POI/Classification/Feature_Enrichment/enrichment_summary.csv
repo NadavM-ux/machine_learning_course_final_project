@@ -1,0 +1,10 @@
+task,family,baseline_bestAUC,enriched_bestAUC,delta
+target_population,numeric,0.7524,0.8702,0.1178
+target_population,desc+numeric,0.7558,0.8709,0.1151
+target_population,tweets+numeric+iran(full),,0.889,
+locals_vs_diaspora,numeric,0.7808,0.8513,0.0705
+locals_vs_diaspora,desc+numeric,0.8015,0.8451,0.0437
+locals_vs_diaspora,tweets+numeric+iran(full),,0.855,
+person_vs_organization,numeric,0.7397,0.7827,0.043
+person_vs_organization,desc+numeric,0.7534,0.8046,0.0512
+person_vs_organization,tweets+numeric+iran(full),,0.7766,

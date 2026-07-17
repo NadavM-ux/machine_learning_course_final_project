@@ -31,7 +31,11 @@ from sklearn.model_selection import StratifiedKFold
 
 HERE = Path(__file__).parent                        # …/Step5_Analysis
 CLASSIFICATION = HERE.parent.parent                  # …/Classification
-RESULTS_CSV = CLASSIFICATION / 'experiments_results_iteration_1.csv'
+# The iteration-1 experiments CSV lives inside Iteration_1/ (HERE.parent), not at the
+# Classification root. Fall back to the root for backward compatibility.
+RESULTS_CSV = HERE.parent / 'experiments_results_iteration_1.csv'
+if not RESULTS_CSV.exists():
+    RESULTS_CSV = CLASSIFICATION / 'experiments_results_iteration_1.csv'
 LABELED_CSV = HERE / 'iteration_1_consensus_translated.csv'
 
 results = pd.read_csv(RESULTS_CSV)
@@ -79,7 +83,7 @@ for tgt in ['target_population', 'locals_vs_diaspora', 'person_vs_organization']
     for n_cls in [3, 2]:
         sub = results[(results['target_column']==tgt) & (results['#classes']==n_cls) &
                       (results['algorithm']=='AdaBoost') & (results['feature_set']=='desc+numeric') &
-                      (results['training_type']=='K-Fold') & (results['balanced']==False)]
+                      (results['training_type']=='K-Fold') & (~results['balanced'])]
         if sub.empty: continue
         row = sub.iloc[0]
 
@@ -115,7 +119,7 @@ for tgt in ['target_population', 'locals_vs_diaspora', 'person_vs_organization']
 deg_df = pd.DataFrame(degeneracy_rows)
 print(deg_df.to_string(index=False))
 deg_df.to_csv(HERE / 'iteration_1_degeneracy_check.csv', index=False)
-print(f"\n  → saved iteration_1_degeneracy_check.csv\n")
+print("\n  → saved iteration_1_degeneracy_check.csv\n")
 
 
 # ============================================================
@@ -166,7 +170,7 @@ for tgt in ['target_population', 'locals_vs_diaspora', 'person_vs_organization']
 summary_df = pd.DataFrame(summary)
 print(summary_df.to_string(index=False))
 summary_df.to_csv(HERE / 'iteration_1_best_models_summary.csv', index=False)
-print(f"\n  → saved iteration_1_best_models_summary.csv\n")
+print("\n  → saved iteration_1_best_models_summary.csv\n")
 
 
 # ============================================================
@@ -192,7 +196,7 @@ fig.suptitle('Mean F1 by algorithm (3-class, across all feature sets + CV strate
 plt.tight_layout(rect=[0,0,1,0.95])
 plt.savefig(HERE / 'plot_f1_by_algorithm.png', dpi=150, bbox_inches='tight')
 plt.close()
-print(f"  → saved plot_f1_by_algorithm.png")
+print("  → saved plot_f1_by_algorithm.png")
 
 # Plot 2: F1 by feature set, per task, n_classes=3
 fig, axes = plt.subplots(1, 3, figsize=(16, 5), sharey=True)
@@ -210,7 +214,7 @@ fig.suptitle('Mean F1 by feature set (3-class)', fontsize=11)
 plt.tight_layout(rect=[0,0,1,0.95])
 plt.savefig(HERE / 'plot_f1_by_feature_set.png', dpi=150, bbox_inches='tight')
 plt.close()
-print(f"  → saved plot_f1_by_feature_set.png")
+print("  → saved plot_f1_by_feature_set.png")
 
 # Plot 3: K-Fold vs LOOCV — paired scatter per (task, algo, fset, balanced)
 fig, ax = plt.subplots(figsize=(6, 6))
@@ -230,6 +234,6 @@ ax.grid(alpha=0.3)
 plt.tight_layout()
 plt.savefig(HERE / 'plot_kfold_vs_loocv.png', dpi=150, bbox_inches='tight')
 plt.close()
-print(f"  → saved plot_kfold_vs_loocv.png")
+print("  → saved plot_kfold_vs_loocv.png")
 
 print("\n✅ Phase A complete.")

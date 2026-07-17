@@ -1,0 +1,2 @@
+last_iteration,last_delta_accuracy,last_delta_best_AUC_target,improvement_threshold,rule1_no_improvement,frac_unlabeled_conf_gt0.9_or_lt0.1,rule2_confidence_collapsed,stop_recommended
+7,-0.007,-0.0052,0.005,True,0.0948,False,True
