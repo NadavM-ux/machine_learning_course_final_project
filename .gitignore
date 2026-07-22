@@ -1,3 +1,8 @@
+# Office lock / local safety backups (not deliverables)
+~$*
+*.PRE_FLOWCHARTS.docx
+*.BACKUP_*.docx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

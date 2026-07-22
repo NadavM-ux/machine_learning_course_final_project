@@ -2,8 +2,9 @@
 Active Learning engine — Iran POI project, Step 6.
 ================================================================
 
-Repeatable across iterations 3, 4, 5, 6 ... . Two classification tasks only
-(`locals_vs_diaspora` was dropped per the instructor).
+Repeatable across iterations 3, 4, 5, 6 ... . All THREE classification tasks
+(target_population, locals_vs_diaspora, person_vs_organization) are trained,
+evaluated (K-Fold + LOOCV) and logged in the experiment file every iteration.
 
 Each iteration is TWO commands with your manual labeling in between:
 
@@ -11,8 +12,8 @@ Each iteration is TWO commands with your manual labeling in between:
     python active_learning.py --iteration 3 --phase A
 
     #   -> open  Iteration_3/iteration_3_users_to_label.csv
-    #   -> for each user, open the profile_url in X, fill target_population and
-    #      person_vs_organization (0/1/2). Save the file.
+    #   -> for each user, open the profile_url in X, fill target_population,
+    #      locals_vs_diaspora and person_vs_organization (0/1/2). Save the file.
 
     # Phase C — fold the new labels in, retrain the full sweep, refresh the plot:
     python active_learning.py --iteration 3 --phase C
@@ -21,6 +22,7 @@ Deliverables produced per iteration (all inside Iteration_N/):
     iteration_N_unlabeled_users_predictions.csv   (Phase A, PDF page 14)
     iteration_N_users_to_label.csv                (Phase A, top-100 to label)
     iteration_N_manual_labels_target_population.csv        (Phase C, PDF page 15)
+    iteration_N_manual_labels_locals_vs_diaspora.csv       (Phase C, PDF page 15)
     iteration_N_manual_labels_person_vs_organization.csv   (Phase C, PDF page 15)
     iteration_N_combined_labeled.csv              (Phase C, the growing training set)
     experiments_results_iteration_N.csv           (Phase C, the full sweep)
@@ -95,10 +97,11 @@ ALGOS = ['LogReg', 'DecisionTree', 'RandomForest', 'SVM', 'AdaBoost']
 if XGBOOST_OK:
     ALGOS.append('XGBoost')
 
-# Instructor guidance: always use class_weight='balanced' (balanced is always better
-# on this imbalanced data). So the sweep runs balanced=True only, and every model we
-# train / every winner we pick is balanced. This also halves the sweep runtime.
-BALANCED_MODES = [True]
+# PDF Step 5 & Step 6 require every experiment log to contain BOTH balance modes.
+# We therefore sweep balanced=True AND balanced=False. (The cross-iteration comparison
+# and the deployed uncertainty model still use the balanced winner, since class_weight
+# ='balanced' is consistently better on this imbalanced data — but both are logged.)
+BALANCED_MODES = [True, False]
 
 CSV_COL_ORDER = [
     'iteration', 'target_column', '#classes', '#class_0', '#class_1', '#class_2',
@@ -159,6 +162,18 @@ def _balanced_mask(df: pd.DataFrame) -> pd.Series:
 # ----------------------------------------------------------------------------
 def combined_path(n: int) -> Path:
     return HERE / f'Iteration_{n}' / f'iteration_{n}_combined_labeled.csv'
+
+
+def _n_labeled_for(n: int) -> int:
+    """Actual size of the labeled set at iteration n. Iterations 1..6 add a full
+    BATCH_SIZE each (100, 200, ... 600), but step 7 folds in only 40 band-samples
+    (-> 640), so read the real file size instead of assuming 100*n."""
+    if n == 1 and ITER1_CONSENSUS.exists():
+        return int(len(pd.read_csv(ITER1_CONSENSUS)))
+    p = combined_path(n)
+    if p.exists():
+        return int(len(pd.read_csv(p)))
+    return 100 * n
 
 
 def load_prev_labeled(iteration: int) -> pd.DataFrame:
@@ -543,7 +558,7 @@ def rebuild_comparison() -> pd.DataFrame:
         best = best_auc_per_task(df)
         row = {
             'iteration': n,
-            'n_labeled_users': 100 * n,        # 100 seed + 100/iteration
+            'n_labeled_users': _n_labeled_for(n),   # real size (step 7 adds 40, not 100)
             'n_experiments': len(df),
             'mean_accuracy': round(df['accuracy'].mean(), 4),
             'mean_F1': round(df['F1'].mean(), 4),

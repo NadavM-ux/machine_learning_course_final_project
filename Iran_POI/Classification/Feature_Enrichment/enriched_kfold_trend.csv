@@ -1,0 +1,8 @@
+iteration,n_labeled_users,target_population__baseline_bestAcc,target_population__baseline_bestAUC,target_population__enriched_bestAcc,target_population__enriched_bestAUC,locals_vs_diaspora__baseline_bestAcc,locals_vs_diaspora__baseline_bestAUC,locals_vs_diaspora__enriched_bestAcc,locals_vs_diaspora__enriched_bestAUC,person_vs_organization__baseline_bestAcc,person_vs_organization__baseline_bestAUC,person_vs_organization__enriched_bestAcc,person_vs_organization__enriched_bestAUC
+1,100,0.9048,0.9385,0.9206,0.94,0.75,0.7917,0.875,0.9167,0.7761,0.7917,0.7761,0.8394
+2,200,0.7902,0.7883,0.9091,0.9183,0.9032,0.5595,0.9032,0.4881,0.7852,0.7788,0.8074,0.779
+3,300,0.8037,0.833,0.8813,0.9146,0.8182,0.6588,0.8636,0.8059,0.7816,0.6868,0.7864,0.7384
+4,400,0.75,0.8265,0.8191,0.8905,0.7705,0.839,0.7869,0.8146,0.811,0.7334,0.8282,0.7875
+5,500,0.7171,0.8027,0.8207,0.8622,0.8,0.8069,0.7733,0.8163,0.8521,0.7742,0.8432,0.8057
+6,600,0.7087,0.7754,0.8326,0.8894,0.8,0.8338,0.8444,0.8753,0.8443,0.7829,0.8564,0.8108
+7,640,0.7253,0.763,0.8433,0.8927,0.7755,0.8102,0.8163,0.8644,0.8503,0.7628,0.8458,0.8045

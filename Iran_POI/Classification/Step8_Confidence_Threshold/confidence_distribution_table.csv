@@ -1,0 +1,4 @@
+confidence_range,n_users,pct_of_all
+prob_target >= 0.9,0,0.0
+prob_target >= 0.8,173,18.3
+prob_target >= 0.7,238,25.2

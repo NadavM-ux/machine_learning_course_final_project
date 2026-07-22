@@ -1,0 +1,174 @@
+username,predicted_class,prob_1,true,hit,source,comments
+akhbare_fori,1,0.8715,1,1,train_labeled,
+ahmadnaderi_ir,1,0.8705,1,1,train_labeled,
+afrasyabia,1,0.8696,1,1,train_labeled,
+ali_cheshomi,1,0.8691,1,1,train_labeled,
+3tareee,1,0.869,1,1,train_labeled,
+alihgh1393,1,0.8686,1,1,train_labeled,
+abdollahram,1,0.8684,1,1,train_labeled,
+abasiabbassi,1,0.8684,1,1,train_labeled,
+ahangevafa,1,0.8677,1,1,train_labeled,
+abdolhamidnetar,1,0.8675,1,1,train_labeled,
+ahadsadeghi71,1,0.8666,1,1,train_labeled,
+ali_rajabi,1,0.8662,2,0,validation_unseen,suspended account
+afshin_46,1,0.8657,1,1,train_labeled,
+ahmadrezagz,1,0.8656,2,0,train_labeled,
+alirezaabasi_ir,1,0.8655,1,1,validation_unseen,iranian parliament member
+alirabiei_iran,1,0.8648,1,1,train_labeled,
+alibahaadori,1,0.8648,2,0,train_labeled,
+abdeekalantari,1,0.8647,1,1,train_labeled,
+_h_o_o_r_,1,0.8646,1,1,validation_unseen,iranian law student
+abdullahmohtadi,1,0.8646,1,1,train_labeled,
+2x0x2x4,1,0.8644,1,1,train_labeled,
+abehtarin,1,0.864,1,1,train_labeled,
+alirezamm1992,1,0.8639,1,1,validation_unseen,pro-regime iranian account
+abedimonfared1,1,0.8636,1,1,train_labeled,
+activistrafiey,1,0.8636,1,1,train_labeled,
+2bender,1,0.8635,1,1,train_labeled,
+ala_ti_ti,1,0.8634,1,1,train_labeled,
+abhaddadii,1,0.8634,1,1,train_labeled,
+aghamiri_hosein,1,0.8626,1,1,train_labeled,
+_angry_n___,1,0.8624,1,1,train_labeled,
+alijafarifo,1,0.8624,1,1,validation_unseen,iranian journalist critic
+alikarimi_ak8,1,0.8623,1,1,train_labeled,
+abed33474966,1,0.8623,1,1,train_labeled,
+aliaalei,1,0.862,1,1,train_labeled,
+3eyedamir,1,0.8619,1,1,train_labeled,
+agha_xavier2,1,0.8618,1,1,train_labeled,
+aliebrahimzade_,1,0.8618,1,1,train_labeled,
+alavi2183,1,0.8617,1,1,train_labeled,
+105_sakariyou,1,0.8617,1,1,train_labeled,
+35anj,1,0.8615,1,1,train_labeled,
+aghomchi,1,0.8614,1,1,validation_unseen,iranian nationalist account
+alilarijani_ir,1,0.8613,1,1,train_labeled,
+abbasi_students,1,0.8613,1,1,train_labeled,
+aeeeeeeeeeeen,1,0.861,1,1,train_labeled,
+akhavanbahar,1,0.8608,1,1,train_labeled,
+20rapcom,1,0.8606,1,1,train_labeled,
+ali_ahmadnia,1,0.8597,1,1,validation_unseen,iranian government spokesman
+ajibzade,1,0.8594,1,1,train_labeled,
+abdolhamidnet,1,0.8592,1,1,train_labeled,
+ageofpahlavi,1,0.8583,1,1,train_labeled,
+___mohsen_,1,0.8581,1,1,train_labeled,
+4freedom4iran,1,0.858,1,1,train_labeled,
+ali_khezrian,1,0.8579,1,1,validation_unseen,iranian parliament member
+aanahelll,1,0.8577,1,1,train_labeled,
+akhoundiabbas,1,0.8576,1,1,validation_unseen,iranian former minister
+_ali_najjar_,1,0.8573,1,1,train_labeled,
+ajan_iran,1,0.8569,2,0,train_labeled,
+alan1234454,1,0.8568,1,1,train_labeled,
+alihars6,1,0.8565,1,1,train_labeled,
+13virginiawoolf,1,0.8563,1,1,train_labeled,
+abolie17386,1,0.8561,1,1,train_labeled,
+0alwaysdreamer0,1,0.856,1,1,validation_unseen,iranian personal account
+9tantiope,1,0.8553,1,1,train_labeled,
+aliibeyranvand,1,0.8552,1,1,train_labeled,
+al3_hacker,1,0.8539,1,1,train_labeled,
+ahmadsamadi1974,1,0.8535,1,1,train_labeled,
+abadguy000,1,0.8533,1,1,train_labeled,
+ahmadalirezaei,1,0.853,1,1,validation_unseen,iranian cleric qom
+aban_paris,1,0.853,2,0,train_labeled,
+aaalirz,1,0.8529,2,0,validation_unseen,suspended account
+alborznazariz,1,0.8524,1,1,train_labeled,
+afarouk92,1,0.8522,0,0,validation_unseen,egyptian iran analyst
+2ndravanparish,1,0.8521,2,0,train_labeled,
+alaki_,1,0.8515,1,1,train_labeled,
+aboutmes7,1,0.8506,1,1,train_labeled,
+_iweni,1,0.8506,2,0,train_labeled,
+adfiranofficial,1,0.8505,1,1,train_labeled,
+aliidaeii,1,0.8504,1,1,train_labeled,
+_ya_karim_,1,0.8504,1,1,train_labeled,
+akramsharifi,1,0.8502,1,1,train_labeled,
+aidanajra,1,0.8496,1,1,train_labeled,
+ali_rezaei_sh,1,0.8491,1,1,validation_unseen,iranian sports journalist
+abbasi_j_5,1,0.849,1,1,train_labeled,
+_thejimbo_,1,0.8485,1,1,train_labeled,
+ak_rogue_,1,0.8481,2,0,train_labeled,
+alirezasayeh,1,0.8478,1,1,train_labeled,
+aghplt,1,0.8475,1,1,train_labeled,
+a_01_2024,1,0.8475,1,1,train_labeled,
+alijannatpour,1,0.8471,1,1,train_labeled,
+alirezaakhondi,1,0.8468,1,1,validation_unseen,iranian-swedish parliament member
+5y6aahcdftzn4me,1,0.8464,2,0,train_labeled,
+ali_hedielou,1,0.8463,1,1,train_labeled,
+alimokhtari102,1,0.8463,2,0,train_labeled,
+2_rebelgirl,1,0.8461,1,1,train_labeled,
+alinazarij,1,0.8458,1,1,train_labeled,
+aa51_ansari,1,0.8456,1,1,train_labeled,
+_aliemili_,1,0.8452,1,1,train_labeled,
+alirostami89168,1,0.8442,1,1,train_labeled,
+alisoleymaiii,1,0.8441,1,1,train_labeled,
+abdimonireh,1,0.8433,1,1,validation_unseen,iranian teachers union activist
+alikarimdoost91,1,0.8429,1,1,train_labeled,
+2017siyasi,1,0.8429,1,1,train_labeled,
+alireza84808379,1,0.8427,1,1,validation_unseen,iranian monarchist account
+_theleftover,1,0.8426,1,1,train_labeled,
+abasinfo,1,0.8424,1,1,train_labeled,
+ailar1000,1,0.8419,1,1,validation_unseen,iranian tech account
+agha_mohamad1_,1,0.8413,1,1,validation_unseen,pro-regime iranian account
+_fatemeramezani,1,0.841,1,1,train_labeled,
+a_rnazari,1,0.841,1,1,validation_unseen,iranian journalist
+61pari93357,1,0.8406,1,1,train_labeled,
+alivesali,1,0.8405,1,1,train_labeled,
+alireza4759,1,0.8403,1,1,train_labeled,
+abdolhamid_net,1,0.84,1,1,train_labeled,
+ali_bitarafan5,1,0.8393,2,0,validation_unseen,suspended account
+1pezeshk_plus,1,0.8391,1,1,train_labeled,
+a_z_im,1,0.839,1,1,train_labeled,
+ajdemarang,1,0.8384,1,1,validation_unseen,iranian diaspora canada
+5ogand,1,0.8371,1,1,train_labeled,
+alimoujani,1,0.8369,1,1,validation_unseen,iranian ambassador georgia
+alimojtahedzad3,1,0.8369,1,1,train_labeled,
+__injaneb96,1,0.8367,1,1,train_labeled,
+ahangparvaz_co,1,0.8364,1,1,validation_unseen,iranian travel agency
+abmomeni,1,0.8364,1,1,train_labeled,
+alighasemi0011,1,0.8358,1,1,validation_unseen,iranian personal account
+ab_ganji,1,0.8351,2,0,validation_unseen,suspended account
+abtahi_m,1,0.835,1,1,validation_unseen,iranian reformist politician
+adameaval,1,0.8336,1,1,validation_unseen,iranian writer account
+alizamaniyan,1,0.8336,1,1,train_labeled,
+abdul_majid33,1,0.8325,1,1,train_labeled,
+1meshmo,1,0.8323,1,1,train_labeled,
+alirezaami58678,1,0.8321,1,1,train_labeled,
+afshinzare1,1,0.8321,1,1,train_labeled,
+abbasiniho,1,0.832,1,1,validation_unseen,iranian monarchist account
+ahmadrezakzmi,1,0.832,1,1,train_labeled,
+afshinagin62,1,0.8315,1,1,validation_unseen,pro-regime iranian account
+alishakourirad,1,0.8299,1,1,validation_unseen,iranian reformist politician
+alibazdarian,1,0.8293,1,1,train_labeled,
+a_nazari99,1,0.8292,1,1,train_labeled,
+4freedominiran,1,0.8291,1,1,train_labeled,
+alihoseini692,1,0.8285,1,1,train_labeled,
+ali_geraei,1,0.8283,1,1,train_labeled,
+abas_asgharpour,1,0.828,1,1,train_labeled,
+aesmailnazhad,1,0.8264,2,0,train_labeled,
+alikalaei62,1,0.8263,1,1,validation_unseen,iranian journalist sweden
+ali_shahoum,1,0.8252,1,1,train_labeled,
+ahmadi_fae83290,1,0.8249,1,1,validation_unseen,iranian personal account
+ali_damghani_84,1,0.8224,1,1,train_labeled,
+abbas2864,1,0.8223,1,1,train_labeled,
+1364ghazal62816,1,0.8211,1,1,validation_unseen,iranian minimal content
+aahonarmand,1,0.821,1,1,train_labeled,
+alireza_didani,1,0.8209,1,1,train_labeled,
+adarehgharibi,1,0.8203,1,1,train_labeled,
+alialiraouf2,1,0.8179,1,1,validation_unseen,iranian diaspora kansas
+alireza_kh29320,1,0.8165,1,1,train_labeled,
+al_sharifzadeh,1,0.8156,1,1,train_labeled,
+alireza_arg,1,0.8153,1,1,validation_unseen,iranian programmer account
+_starboy369,1,0.8149,1,1,train_labeled,
+aliiorgi,1,0.8131,1,1,train_labeled,
+alijoonz121,1,0.8131,1,1,validation_unseen,iranian personal account
+_mahdiyar313,1,0.813,2,0,train_labeled,
+ahdeaghiq,1,0.8122,1,1,train_labeled,
+alirezashayest1,1,0.8113,1,1,train_labeled,
+abfarideh,1,0.8105,1,1,validation_unseen,iranian opposition activist
+abtinhoveyda,1,0.8104,1,1,validation_unseen,iranian personal account
+abd_ir1,1,0.8098,1,1,train_labeled,
+afshinbahrami33,1,0.8089,1,1,validation_unseen,iranian accounting instructor
+alishiri272750,1,0.8064,1,1,train_labeled,
+adelzarandi,1,0.8061,1,1,train_labeled,
+aliramez2,1,0.8041,1,1,train_labeled,
+adorno_persian,1,0.8036,1,1,train_labeled,
+aliazarids,1,0.8036,1,1,train_labeled,
+abasabolfathi43,1,0.8017,2,0,validation_unseen,account not found
+alishariat1380,1,0.8008,1,1,validation_unseen,iranian location no posts

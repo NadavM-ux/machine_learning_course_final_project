@@ -1,0 +1,5 @@
+stratum,threshold,n,hits_true_target,false_positives,unverifiable,hit_rate_strict,hit_rate_verifiable,pass_85pct
+unseen_42,0.8,42,36,1,5,0.8571,0.973,True
+train_131,0.8,131,120,0,11,0.916,1.0,True
+full_173,0.8,173,156,1,16,0.9017,0.9936,True
+sample_100,0.8,100,89,0,11,0.89,1.0,True

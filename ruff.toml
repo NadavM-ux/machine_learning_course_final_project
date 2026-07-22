@@ -1,0 +1,18 @@
+# Ruff configuration for the Iran_POI analysis scripts.
+#
+# The default rule set (E, F) is kept, with three checks waived because they
+# flag intentional, correct patterns rather than defects:
+#
+#   E402  module-import-not-at-top-of-file
+#         Several scripts must run `matplotlib.use("Agg")` and
+#         `warnings.filterwarnings("ignore")` *before* importing pyplot etc.,
+#         so a handful of imports legitimately sit below those calls.
+#
+#   E702  multiple-statements-on-one-line (semicolon)
+#   E701  multiple-statements-on-one-line (colon)
+#         Paired plotting calls are grouped on one line on purpose for
+#         readability, e.g. `fig.savefig(...); plt.close(fig)` and
+#         `ax.set_xlabel(...); ax.set_ylabel(...)`.
+
+[lint]
+ignore = ["E402", "E701", "E702"]
