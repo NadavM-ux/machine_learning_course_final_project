@@ -7,6 +7,8 @@ in a pool of about 950 candidate profiles, when labels are expensive: a person h
 Every account is classified on three tasks (`target_population`, `locals_vs_diaspora`, `person_vs_organization`),
 and the identified population is clustered at the end.
 
+![Active learning plateaus as labels grow; Iran-specific features lift AUC from 0.76 to 0.89](Iran_POI/Classification/plot_active_learning_story.png)
+
 ## Approach and results
 
 1. **Statistical profiling** of the candidate pool: follower, following and status distributions.
